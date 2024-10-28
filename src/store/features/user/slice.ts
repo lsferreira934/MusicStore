@@ -1,15 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface CurrentUser {
-  name: string | null;
-  email: string | null;
-  avatar: string | null;
-}
-
 const currentUser: CurrentUser = {
   name: null,
   avatar: null,
   email: null,
+  isLogged: false,
 };
 
 const initialState = {
@@ -23,10 +18,11 @@ const userSlice = createSlice({
     setUser: (state, action: PayloadAction<CurrentUser>) => {
       const user = localStorage.getItem("user");
       if (user) {
-        state.currentUser = JSON.parse(user);
+        state.currentUser = { ...JSON.parse(user), isLogged: true };
         return;
       }
       state.currentUser = action.payload;
+      state.currentUser.isLogged = true;
     },
     clearUser: (state) => {
       localStorage.setItem("user", "");

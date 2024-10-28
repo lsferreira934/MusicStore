@@ -8,9 +8,9 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
 
 export function ModalCreateAccount() {
   return (
@@ -39,7 +39,9 @@ export function ModalCreateAccount() {
         </div>
 
         <DialogFooter>
-          <Button type="submit" className="w-full">Criar Conta</Button>
+          <Button type="submit" className="w-full">
+            Criar Conta
+          </Button>
         </DialogFooter>
 
         <div className="relative mt-4">

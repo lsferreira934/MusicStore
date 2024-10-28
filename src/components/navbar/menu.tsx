@@ -14,8 +14,8 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-import { UserNav } from "./user-navbar";
-import { Cart } from "./cart";
+import { Cart } from "../cart";
+import { UserNav } from "../user-navbar";
 
 export function MenuDefault() {
   return (
@@ -199,7 +199,7 @@ export function MenuDefault() {
           </MenubarContent>
         </MenubarMenu>
       </div>
-      <div className="flex gap-6 items-center">
+      <div className="flex items-center gap-6">
         <Cart />
         <UserNav />
       </div>

@@ -1,3 +1,4 @@
+"use cliente";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -9,30 +10,39 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchLogin } from "@/store/features/auth/slice";
-import { AppDispatch } from "@/store/store";
+import { AppDispatch, RootState } from "@/store/store";
+import { Icons } from "../icons";
 
 export function ModalLogin() {
+  const [open, setOpen] = useState<boolean>(false);
   const [email, setEmail] = useState<string>("leandrosf934@gmail.com");
   const [password, setPassword] = useState<string>("123456789");
+
+  const { loading } = useSelector((state: RootState) => state.authReducer);
 
   const dispatch = useDispatch<AppDispatch>();
 
   const handlerLogin = () => {
-    dispatch(fetchLogin({email, password}))
+    dispatch(fetchLogin({ email, password }));
   };
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="ghost">Login</Button>
+        <Button variant="ghost" onClick={() => setOpen(true)}>
+          Login
+        </Button>
       </DialogTrigger>
-      <DialogContent className="md:max-w-[425px]">
+      <DialogContent
+        className="md:max-w-[425px]"
+        onInteractOutside={(e) => e.preventDefault()}
+      >
         <DialogHeader>
           <DialogTitle>Login</DialogTitle>
           <DialogDescription>
@@ -45,6 +55,7 @@ export function ModalLogin() {
           <Input
             id="email"
             type="email"
+            disabled={loading}
             placeholder="seuemail@exemplo.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -55,6 +66,7 @@ export function ModalLogin() {
           <Input
             id="password"
             type="password"
+            disabled={loading}
             placeholder="Digite sua senha"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -62,7 +74,13 @@ export function ModalLogin() {
         </div>
 
         <DialogFooter>
-          <Button type="submit" className="w-full" onClick={handlerLogin}>
+          <Button
+            disabled={loading}
+            type="submit"
+            className="w-full"
+            onClick={handlerLogin}
+          >
+            {loading && <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />}
             Entrar
           </Button>
         </DialogFooter>
@@ -77,8 +95,14 @@ export function ModalLogin() {
           </div>
         </div>
         <div className="mt-4 grid grid-cols-2 gap-6">
-          <Button variant="outline">Github</Button>
-          <Button variant="outline">Google</Button>
+          <Button disabled={loading} variant="outline">
+            {loading && <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />}
+            Github
+          </Button>
+          <Button disabled={loading} variant="outline">
+            {loading && <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />}
+            Google
+          </Button>
         </div>
       </DialogContent>
     </Dialog>

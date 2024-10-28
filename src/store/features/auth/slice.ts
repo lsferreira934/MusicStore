@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { setUser } from "../user/slice";
-import { create } from "domain";
 
 interface AuthState {
   email: string;
@@ -51,12 +50,16 @@ const authSlice = createSlice({
       })
       .addCase(fetchLogin.fulfilled, (state, action) => {
         state.loading = false;
-        localStorage.setItem("user", JSON.stringify({
-          avatar: action.payload.avatar,
-          name: action.payload.name,
-          email: action.payload.email,
-          id: action.payload.id
-        }));
+        localStorage.setItem(
+          "user",
+          JSON.stringify({
+            avatar: action.payload.avatar,
+            name: action.payload.name,
+            email: action.payload.email,
+            id: action.payload.id,
+            isLogged: true,
+          }),
+        );
       })
       .addCase(fetchLogin.rejected, (state, action) => {
         state.loading = false;

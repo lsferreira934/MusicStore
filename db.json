@@ -2,49 +2,201 @@
   "newAlbuns": [
     {
       "id": "1",
-      "name": "Code Cadence",
+      "name": "Digital Dreams",
       "artist": "Ethan Byte",
       "cover": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=300&dpr=2&q=80",
       "songs": [
         {
-          "title": "Code Symphony",
+          "id": "1",
+          "title": "Dream State",
           "duration": "3:45"
         },
         {
-          "title": "Bug Fixer",
-          "duration": "4:10"
-        },
+          "id": "2",
+          "title": "Binary Beats",
+          "duration": "4:20"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Echoes of the Past",
+      "artist": "Lena Logic",
+      "cover": "https://images.unsplash.com/photo-1528143358888-6d3c7f67bd5d?w=300&dpr=2&q=80",
+      "songs": [
         {
-          "title": "Debugging Dreams",
-          "duration": "2:55"
-        },
-        {
-          "title": "Variable Vibes",
+          "id": "3",
+          "title": "Resonance",
           "duration": "3:30"
         },
         {
-          "title": "Async Melodies",
+          "id": "4",
+          "title": "Time Traveler",
+          "duration": "4:10"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Harmonic Fusion",
+      "artist": "Nina Netcode",
+      "cover": "https://images.unsplash.com/photo-1468817814611-b7edf94b5d60?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "5",
+          "title": "Melody Maker",
           "duration": "3:15"
         },
         {
-          "title": "Coded Harmony",
+          "id": "6",
+          "title": "Sonic Adventure",
           "duration": "4:05"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Virtual Visions",
+      "artist": "Beth Binary",
+      "cover": "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "7",
+          "title": "Futuristic Flow",
+          "duration": "3:55"
         },
         {
-          "title": "Refactoring Beats",
-          "duration": "3:20"
+          "id": "8",
+          "title": "Digital Voyage",
+          "duration": "4:00"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Coded Cadences",
+      "artist": "Ethan Byte",
+      "cover": "https://images.unsplash.com/photo-1615247001958-f4bc92fa6a4a?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "9",
+          "title": "Rhythm in Code",
+          "duration": "4:15"
         },
         {
-          "title": "Function Fusion",
+          "id": "10",
+          "title": "Syntax Symphony",
+          "duration": "3:40"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Chords of Connection",
+      "artist": "Lena Logic",
+      "cover": "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "11",
+          "title": "Harmony",
           "duration": "4:25"
         },
         {
-          "title": "Data Dance",
-          "duration": "2:40"
+          "id": "12",
+          "title": "Connection",
+          "duration": "3:55"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Sonic Textures",
+      "artist": "Nina Netcode",
+      "cover": "https://images.unsplash.com/photo-1614113489855-66422ad300a4?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "13",
+          "title": "Textured Sounds",
+          "duration": "3:35"
         },
         {
-          "title": "Compile Time Chill",
-          "duration": "3:50"
+          "id": "14",
+          "title": "Layered Melodies",
+          "duration": "4:05"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Rhythmic Reflections",
+      "artist": "Beth Binary",
+      "cover": "https://images.unsplash.com/photo-1513745405825-efaf9a49315f?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "15",
+          "title": "Reflective Rhythms",
+          "duration": "3:45"
+        },
+        {
+          "id": "16",
+          "title": "Echoing Beats",
+          "duration": "4:30"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Luminous Soundscapes",
+      "artist": "Ethan Byte",
+      "cover": "https://images.unsplash.com/photo-1615247001958-f4bc92fa6a4a?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "17",
+          "title": "Bright Beats",
+          "duration": "3:20"
+        },
+        {
+          "id": "18",
+          "title": "Illuminated Melodies",
+          "duration": "4:10"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Techno Vibes",
+      "artist": "Lena Logic",
+      "cover": "https://images.unsplash.com/photo-1528143358888-6d3c7f67bd5d?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "19",
+          "title": "Electronic Dreams",
+          "duration": "3:55"
+        },
+        {
+          "id": "20",
+          "title": "Rhythmic Energy",
+          "duration": "4:25"
+        }
+      ]
+    }
+  ],
+  "topAlbums": [
+    {
+      "id": "1",
+      "name": "Refactor Rhythms",
+      "artist": "Lena Logic",
+      "cover": "https://images.unsplash.com/photo-1528143358888-6d3c7f67bd5d?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "1",
+          "title": "Refactor",
+          "duration": "3:45"
+        },
+        {
+          "id": "2",
+          "title": "Rhythm",
+          "duration": "4:20"
         }
       ]
     },
@@ -55,44 +207,14 @@
       "cover": "https://images.unsplash.com/photo-1468817814611-b7edf94b5d60?w=300&dpr=2&q=80",
       "songs": [
         {
-          "title": "Promise Keeper",
-          "duration": "3:15"
-        },
-        {
-          "title": "Chained Thoughts",
-          "duration": "3:55"
-        },
-        {
-          "title": "Asynchronous Journey",
-          "duration": "4:05"
-        },
-        {
-          "title": "Resolution Rhythm",
+          "id": "3",
+          "title": "Promises",
           "duration": "3:30"
         },
         {
-          "title": "Error Handling",
-          "duration": "3:40"
-        },
-        {
-          "title": "Callback Cascade",
-          "duration": "2:50"
-        },
-        {
-          "title": "Sync Up",
-          "duration": "3:20"
-        },
-        {
-          "title": "Awaiting Sound",
+          "id": "4",
+          "title": "Unchained",
           "duration": "4:10"
-        },
-        {
-          "title": "Promise Party",
-          "duration": "3:45"
-        },
-        {
-          "title": "Finalization Groove",
-          "duration": "3:35"
         }
       ]
     },
@@ -103,286 +225,247 @@
       "cover": "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
       "songs": [
         {
-          "title": "Component Creation",
-          "duration": "3:30"
+          "id": "5",
+          "title": "Chronicles",
+          "duration": "3:15"
         },
         {
-          "title": "State Management",
-          "duration": "4:00"
-        },
-        {
-          "title": "Prop Drilling Blues",
-          "duration": "3:20"
-        },
-        {
-          "title": "Lifecycle Legends",
-          "duration": "3:55"
-        },
-        {
-          "title": "Reusability Remix",
-          "duration": "3:10"
-        },
-        {
-          "title": "Component Communication",
-          "duration": "4:15"
-        },
-        {
-          "title": "Functional Form",
-          "duration": "3:25"
-        },
-        {
-          "title": "React Riffs",
-          "duration": "3:35"
-        },
-        {
-          "title": "Hooks Harmony",
-          "duration": "3:45"
-        },
-        {
-          "title": "Virtual DOM Vibes",
-          "duration": "3:50"
+          "id": "6",
+          "title": "Component",
+          "duration": "4:05"
         }
       ]
     },
     {
       "id": "4",
-      "name": "Digital Dreams",
-      "artist": "Sara Syntax",
-      "cover": "https://images.unsplash.com/photo-1494150881259-88d77f7b7b57?w=300&dpr=2&q=80",
+      "name": "Dynamic Dependencies",
+      "artist": "Lena Logic",
+      "cover": "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
       "songs": [
         {
-          "title": "Future Forward",
-          "duration": "4:00"
+          "id": "7",
+          "title": "Dependencies",
+          "duration": "4:15"
         },
         {
-          "title": "Data Streams",
-          "duration": "3:50"
-        },
-        {
-          "title": "Byte by Byte",
-          "duration": "3:30"
-        },
-        {
-          "title": "Debugging the Night",
-          "duration": "4:20"
-        },
-        {
-          "title": "Digital Dance",
-          "duration": "3:45"
-        },
-        {
-          "title": "Techno Thoughts",
-          "duration": "3:10"
-        },
-        {
-          "title": "Evolving Echoes",
+          "id": "8",
+          "title": "Dynamics",
           "duration": "3:40"
-        },
-        {
-          "title": "Syntax Symphony",
-          "duration": "3:15"
-        },
-        {
-          "title": "Network Nights",
-          "duration": "4:05"
-        },
-        {
-          "title": "Silicon Serenade",
-          "duration": "3:25"
         }
       ]
     },
     {
       "id": "5",
-      "name": "Bytes & Beats",
-      "artist": "Leo Logic",
-      "cover": "https://images.unsplash.com/photo-1558922776-38e6ef7c046b?w=300&dpr=2&q=80",
+      "name": "Error Handling Harmony",
+      "artist": "Ethan Byte",
+      "cover": "https://images.unsplash.com/photo-1513745405825-efaf9a49315f?w=300&dpr=2&q=80",
       "songs": [
         {
-          "title": "Binary Bliss",
-          "duration": "3:55"
+          "id": "9",
+          "title": "Harmony",
+          "duration": "3:25"
         },
         {
-          "title": "Data Dreams",
-          "duration": "3:20"
-        },
-        {
-          "title": "Code Jams",
-          "duration": "4:10"
-        },
-        {
-          "title": "Echoes of Innovation",
-          "duration": "3:35"
-        },
-        {
-          "title": "Rhythmic Algorithms",
-          "duration": "3:50"
-        },
-        {
-          "title": "Tech Tones",
-          "duration": "3:05"
-        },
-        {
-          "title": "Pixelated Melodies",
-          "duration": "4:15"
-        },
-        {
-          "title": "Future Frequencies",
-          "duration": "3:30"
-        },
-        {
-          "title": "Harmonic Hubs",
-          "duration": "3:45"
-        },
-        {
-          "title": "Sound of Synergy",
-          "duration": "4:00"
+          "id": "10",
+          "title": "Error Handling",
+          "duration": "4:35"
         }
       ]
-    }
-  ],
-  "madeForYourAlbums": [
+    },
     {
       "id": "6",
-      "name": "Innovation Intervals",
-      "artist": "Ella Engine",
-      "cover": "https://images.unsplash.com/photo-1506702316621-e9c4f2c88e44?w=300&dpr=2&q=80",
+      "name": "Feedback Frequency",
+      "artist": "Nina Netcode",
+      "cover": "https://images.unsplash.com/photo-1614113489855-66422ad300a4?w=300&dpr=2&q=80",
       "songs": [
         {
-          "title": "Breakthrough Beats",
-          "duration": "3:15"
-        },
-        {
-          "title": "Inception Incantations",
-          "duration": "3:55"
-        },
-        {
-          "title": "Dynamic Duets",
-          "duration": "4:05"
-        },
-        {
-          "title": "Rhythmic Revolution",
-          "duration": "3:30"
-        },
-        {
-          "title": "Creative Crescendos",
-          "duration": "3:40"
-        },
-        {
-          "title": "Techno Tributes",
-          "duration": "2:50"
-        },
-        {
-          "title": "Synthesized Soundscapes",
-          "duration": "3:20"
-        },
-        {
-          "title": "Innovative Ideas",
-          "duration": "4:10"
-        },
-        {
-          "title": "Eureka Moments",
+          "id": "11",
+          "title": "Frequency",
           "duration": "3:45"
         },
         {
-          "title": "Code to Composition",
-          "duration": "3:35"
-        }
-      ]
-    }
-  ],
-  "playlist": [],
-  "top10": [
-    {
-      "id": "1",
-      "name": "Top Hit 1",
-      "artist": "Star Artist",
-      "cover": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=300&dpr=2&q=80",
-      "songs": [
-        {
-          "title": "Top Song 1",
-          "duration": "4:00"
-        },
-        {
-          "title": "Top Song 2",
-          "duration": "3:40"
-        },
-        {
-          "title": "Top Song 3",
-          "duration": "4:15"
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Top Hit 2",
-      "artist": "Famous Singer",
-      "cover": "https://images.unsplash.com/photo-1468817814611-b7edf94b5d60?w=300&dpr=2&q=80",
-      "songs": [
-        {
-          "title": "Top Song 4",
-          "duration": "3:50"
-        },
-        {
-          "title": "Top Song 5",
-          "duration": "4:05"
-        },
-        {
-          "title": "Top Song 6",
-          "duration": "3:30"
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "name": "Top Hit 3",
-      "artist": "Another Artist",
-      "cover": "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
-      "songs": [
-        {
-          "title": "Top Song 7",
-          "duration": "4:10"
-        },
-        {
-          "title": "Top Song 8",
-          "duration": "3:45"
-        },
-        {
-          "title": "Top Song 9",
+          "id": "12",
+          "title": "Feedback",
           "duration": "4:20"
         }
       ]
-    }
-  ],
-  "recommendations": [
+    },
     {
-      "id": "1",
-      "name": "Chill Beats",
-      "artist": "Relaxed Artist",
-      "cover": "https://images.unsplash.com/photo-1494150881259-88d77f7b7b57?w=300&dpr=2&q=80",
+      "id": "7",
+      "name": "Integration Inspirations",
+      "artist": "Beth Binary",
+      "cover": "https://images.unsplash.com/photo-1615247001958-f4bc92fa6a4a?w=300&dpr=2&q=80",
       "songs": [
         {
-          "title": "Chill Song 1",
-          "duration": "3:00"
+          "id": "13",
+          "title": "Inspiration",
+          "duration": "3:55"
         },
         {
-          "title": "Chill Song 2",
-          "duration": "3:30"
+          "id": "14",
+          "title": "Integration",
+          "duration": "4:10"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "JavaScript Journeys",
+      "artist": "Ethan Byte",
+      "cover": "https://images.unsplash.com/photo-1468817814611-b7edf94b5d60?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "15",
+          "title": "Journeys",
+          "duration": "4:05"
         },
         {
-          "title": "Chill Song 3",
+          "id": "16",
+          "title": "JavaScript",
           "duration": "3:45"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Karma Coding",
+      "artist": "Lena Logic",
+      "cover": "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "17",
+          "title": "Karma",
+          "duration": "4:15"
+        },
+        {
+          "id": "18",
+          "title": "Coding",
+          "duration": "3:30"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Version Control Vibes",
+      "artist": "Nina Netcode",
+      "cover": "https://images.unsplash.com/photo-1528143358888-6d3c7f67bd5d?w=300&dpr=2&q=80",
+      "songs": [
+        {
+          "id": "19",
+          "title": "Version Control",
+          "duration": "3:50"
+        },
+        {
+          "id": "20",
+          "title": "Vibes",
+          "duration": "4:25"
         }
       ]
     }
   ],
-  "users": 
+  "playlist": [
     {
       "id": "1",
-      "name": "Leandro Ferreira",
-      "email": "leandrosf934@gmail.com",
-      "avatar": "https://avatars.githubusercontent.com/u/56802012?v=4",
-      "password": "123456789"
+      "title": "Coding Classics",
+      "albums": [
+        {
+          "id": "1",
+          "name": "Refactor Rhythms",
+          "artist": "Lena Logic",
+          "cover": "https://images.unsplash.com/photo-1528143358888-6d3c7f67bd5d?w=300&dpr=2&q=80",
+          "songs": [
+            {
+              "id": "1",
+              "title": "Refactor",
+              "duration": "3:45"
+            },
+            {
+              "id": "2",
+              "title": "Rhythm",
+              "duration": "4:20"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "Promises Unchained",
+          "artist": "Nina Netcode",
+          "cover": "https://images.unsplash.com/photo-1468817814611-b7edf94b5d60?w=300&dpr=2&q=80",
+          "songs": [
+            {
+              "id": "3",
+              "title": "Promises",
+              "duration": "3:30"
+            },
+            {
+              "id": "4",
+              "title": "Unchained",
+              "duration": "4:10"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "name": "Component Chronicles",
+          "artist": "Beth Binary",
+          "cover": "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
+          "songs": [
+            {
+              "id": "5",
+              "title": "Chronicles",
+              "duration": "3:15"
+            },
+            {
+              "id": "6",
+              "title": "Component",
+              "duration": "4:05"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "name": "Dynamic Dependencies",
+          "artist": "Lena Logic",
+          "cover": "https://images.unsplash.com/photo-1490300472339-79e4adc6be4a?w=300&dpr=2&q=80",
+          "songs": [
+            {
+              "id": "7",
+              "title": "Dependencies",
+              "duration": "4:15"
+            },
+            {
+              "id": "8",
+              "title": "Dynamics",
+              "duration": "3:40"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "name": "Error Handling Harmony",
+          "artist": "Ethan Byte",
+          "cover": "https://images.unsplash.com/photo-1513745405825-efaf9a49315f?w=300&dpr=2&q=80",
+          "songs": [
+            {
+              "id": "9",
+              "title": "Harmony",
+              "duration": "3:25"
+            },
+            {
+              "id": "10",
+              "title": "Error Handling",
+              "duration": "4:35"
+            }
+          ]
+        }
+      ]
     }
-  
+  ],
+  "users": {
+    "id": "1",
+    "name": "Leandro Ferreira",
+    "email": "leandrosf934@gmail.com",
+    "avatar": "https://avatars.githubusercontent.com/u/56802012?v=4",
+    "password": "123456789"
+  }
 }

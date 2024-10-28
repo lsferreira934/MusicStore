@@ -1,13 +1,16 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { useDispatch } from "react-redux";
+
 import userReducer from "./features/user/slice";
 import authReducer from "./features/auth/slice";
-import { useDispatch } from "react-redux";
+import playlistsReducer from "./features/playlists/slice";
+import albumReducer from "./features/album/slice";
 
 import logger from "redux-logger";
 
 export const store = () => {
   return configureStore({
-    reducer: { userReducer, authReducer },
+    reducer: { userReducer, authReducer, playlistsReducer, albumReducer },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
   });
 };

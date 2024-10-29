@@ -1,6 +1,6 @@
-import { ModalCreateAccount } from "./modal-create-account";
+import { ModalCreateAccount } from "./modal/modal-create-account";
 import { Menubar } from "@/components/ui/menubar";
-import { ModalLogin } from "./modal-login";
+import { ModalLogin } from "./modal/modal-login";
 
 export function MenuLogin() {
   return (

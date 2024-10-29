@@ -1,0 +1,17 @@
+# Dockerfile.jsonserver
+FROM node:18-alpine
+
+RUN mkdir -p /app
+
+WORKDIR /app
+
+COPY package.json /app
+
+RUN npm install -g json-server
+
+COPY . /app
+
+EXPOSE 4000
+
+# Comando para iniciar o JSON Server com um atraso para garantir a conexão com o app
+CMD ["json-server", "--watch", "/app/db.json", "--port", "4000"]

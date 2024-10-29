@@ -1,3 +1,5 @@
+import { UserNav } from "@/components/user-navbar";
+import { Cart } from "@/components/cart";
 import {
   Menubar,
   MenubarCheckboxItem,
@@ -14,8 +16,6 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-import { Cart } from "../cart";
-import { UserNav } from "../user-navbar";
 
 export function MenuDefault() {
   return (

@@ -13,13 +13,9 @@ import {
   ContextMenuTrigger,
 } from "@/components/ui/context-menu";
 
-import {
-  clearPlaylists,
-  fetchPlaylist,
-} from "@/store/features/playlists/slice";
-import { AppDispatch, RootState } from "@/store/store";
-import { useCallback, useEffect, useMemo } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@/store/store";
+import { useMemo } from "react";
+import { useSelector } from "react-redux";
 import { SkeletonAlbumArtwork } from "./skeleton-album-artwork";
 
 interface AlbumArtworkProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -28,6 +24,7 @@ interface AlbumArtworkProps extends React.HTMLAttributes<HTMLDivElement> {
   width?: number;
   height?: number;
   loading: boolean;
+  className: string;
 }
 
 export function AlbumArtwork({
@@ -39,7 +36,6 @@ export function AlbumArtwork({
   className,
   ...props
 }: AlbumArtworkProps) {
-  const dispatch = useDispatch<AppDispatch>();
   const { currentUser } = useSelector((state: RootState) => state.userReducer);
   const { playlists } = useSelector(
     (state: RootState) => state.playlistsReducer,
@@ -91,7 +87,7 @@ export function AlbumArtwork({
                       Nova Playlist
                     </ContextMenuItem>
                     <ContextMenuSeparator />
-                    {loadPlaylists.map((playlist) => (
+                    {loadPlaylists.map((playlist: Playlist) => (
                       <ContextMenuItem key={playlist.id}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

@@ -11,7 +11,6 @@ import {
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 
-
 export function ModalCreateAccount() {
   return (
     <Dialog>

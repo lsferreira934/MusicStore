@@ -36,7 +36,7 @@ export default function Playlist() {
       </h2>
       <ScrollArea className="h-[300px] px-1">
         <div className="space-y-1 p-2">
-          {playlists?.map((playlist, i) => (
+          {playlists?.map((playlist: Playlist, i: number) => (
             <Button
               key={`${playlist.id}-${i}`}
               variant="ghost"

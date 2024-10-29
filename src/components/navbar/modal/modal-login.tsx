@@ -1,5 +1,4 @@
 "use cliente";
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -9,15 +8,16 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-
+import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { Icons } from "@/components/icons";
 
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchLogin } from "@/store/features/auth/slice";
 import { AppDispatch, RootState } from "@/store/store";
-import { Icons } from "../icons";
+
 
 export function ModalLogin() {
   const [open, setOpen] = useState<boolean>(false);
